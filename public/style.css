@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    background: #0D0D0D;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    height: 70px;
+}
+#logo{
+    font-size: 24px;
+}
+nav{
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+#apresentacao{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h1{
+    font-size: 60px;
+    line-height: 55px;
+    margin-top: 200px;
+    overflow: hidden;
+}
+span{
+    color: #00FF85;
+}
+#apresentacao button{
+    background: #00FF85;
+    color: white;
+    font-weight: 600;
+    font-size: 26px;
+    padding: 4px 0px;
+    width: 210px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+section{
+    margin-bottom: 400px;
+    text-align: center;
+}
+h2{
+    color: white;
+    font-size: 46px;
+    padding-bottom: 80px;
+}
+.green{
+    color: #00FF85;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 60px;
+}
+.textoSobreMim{
+    text-indent: 30px;
+    text-align: left;
+    color: white;
+    font-size: 18px;
+    width: 68%;
+    margin: auto;
+    margin-top: 20px;
+}
+#setasConhecimentos{
+    display: none;
+}
+#divMeusConhecimentos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.tecnologia{
+    background: #dadada;
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+    padding: 10px;
+}
+h4{
+    font-size: 24px;
+}
+.imgProjetos{
+    width: 50%;
+}
+#figmaImage{
+    width: 35%;
+}
+.tecnologia p{
+    width: 60%;
+    margin: 0 auto;
+}
+#divMeusProjetos{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+#divMeusProjetos{
+    margin-bottom: 20px;
+}
+.projeto{
+    background: #dadada;
+    width: 300px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+.projetoImg{
+    width: 90%;
+    border-radius: 5px;
+}
+.projeto p{
+    width: 90%;
+    margin: 0 auto;
+}
+.projeto button{
+    background: #00FF85;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+    padding: 2px 0px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+#setasProjetos{
+    display: none;
+}
+#formularioDeContato{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px;
+    margin: 0 auto;
+}
+input, textarea, button{
+    border-radius: 15px;
+    border: none;
+    padding: 3px 10px;
+    font-size: 22px;
+    outline: none;
+}
+#formularioDeContato button{
+    background: #00FF85;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+@media(max-width: 768px){
+    section{
+        margin-bottom: 300px;
+        text-align: center;
+    }
+    nav{
+        position: absolute;
+        top: 70px;
+        background: white;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 0px;
+        overflow: hidden;
+        transition: 1s;
+    }
+    nav a{
+        color: black;
+        border-bottom: 1px solid black;
+        padding: 10px 0px;
+    }
+    .menuCelular{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin-top: -20px;
+        transition: .5s;
+    }
+    .menuCelular::before{
+        content: '';
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin-top: 8px;
+        transition: .5s;
+    }
+    .menuCelular::after{
+        content: '';
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin-top: 5px;
+        transition: .5s;
+    }
+    header.menuAtivo nav{
+        height: calc(100vh - 70px);
+    }
+    header.menuAtivo .menuCelular::after{
+        transform: rotate(-80deg);
+        margin-top: -11.5px;
+    }
+    header.menuAtivo .menuCelular::before{
+        width: 0px;
+    }
+    header.menuAtivo .menuCelular{
+        margin-top: 0px;
+        transform: rotate(-50deg);
+    }
+    h1{
+        font-size: 40px;
+        line-height: 40px;
+        margin-top: 150px;
+    }
+    #apresentacao button{
+        font-size: 22px;
+        width: 180px;
+        margin-top: 0px;
+    }
+    .green{
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .textoSobreMim{
+        font-size: 16px;
+    }
+    #setasConhecimentos{
+        display: flex;
+        margin-top: 130px;
+    }
+    #setasConhecimentos img{
+        width: 35px;
+        padding: 5px;
+        height: 35px;
+        cursor: pointer;
+        position: absolute;
+    }
+    #arrowLeft{
+        transform: rotate(180deg);
+        left: 5px;
+    }
+    #arrowRight{
+        right: 5px;
+    }
+    #divMeusConhecimentos{
+        flex-wrap: nowrap;
+        width: 682.5%;
+        gap: 10px;
+        justify-content: left;
+        margin: 0;
+        transition: 1s;
+    }
+    .tecnologia{
+        height: 300px;
+        width: 97.5%;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    h4{
+        font-size: 24px;
+    }
+    .imgProjetos{
+        width: 30%;
+    }
+    #figmaImage{
+        width: 18%;
+    }
+    #divMeusProjetos{
+        justify-content: left;
+        width: 390%;
+        transition: 1s;
+    }
+    .projeto{
+        width: 97.5%;
+    }
+    .projetoImg{
+        width: 70%;
+    }
+    #setasProjetos{
+        display: flex;
+        margin-top: 180px;
+    }
+    #setasProjetos img{
+        width: 35px;
+        padding: 5px;
+        height: 35px;
+        cursor: pointer;
+        position: absolute;
+    }
+    #arrowLeftProject{
+        left: 5px;
+        transform: rotate(180deg); 
+    }
+    #arrowRightProject{
+        right: 5px;
+    }
+    section{
+        overflow: hidden;
+    }
+}
+@media(max-width: 425px){
+    h2{
+        font-size: 28px;
+        padding-bottom: 30px;
+    }
+    #logo{
+        font-size: 18px;
+    }
+    #setasConhecimentos{
+        margin-top: 100px;
+    }
+    #formularioDeContato{
+        width: 300px;
+    }
+    input, textarea, button{
+        font-size: 18px;
+    }
+    #apresentacaoAbaSobreMim, #textoSobreMim{
+        font-size: 16px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #textoSobreMim{
+        font-size: 12px;
+    }
+    h4{
+        font-size: 22px;
+        width: 90%;
+        margin: 0 auto; 
+    }
+    .tecnologia{
+        height: 220px;
+    }
+    .tecnologia p{
+        font-size: 14px;
+    }
+    .projeto p{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    h1{
+        font-size: 35px;
+        line-height: 30px;
+    }
+    #divMeusProjetos{
+        justify-content: left;
+        width: 390%;
+        transition: 1s;
+    }
+    .projeto{
+        width: 97,5%;
+    }
+}
+@media(max-width: 320px){
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        margin: 0 auto;
+    }
+    #tituloSobreMim{
+        width: 90%;
+        line-height: 30px;
+    }
+    #formularioDeContato{
+        width: 260px;
+    }
+}

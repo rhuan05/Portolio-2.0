@@ -40,7 +40,7 @@ app.post('/', (req, res)=>{
         subject: 'Vim do seu portfólio.',
         text: info.message,
     }).then(message=>{
-        res.send('Mensagem enviada com sucesso. <a href="https://portfolio-rhuan.herokuapp.com/https://portfolio-rhuan.herokuapp.com/">Voltar para o portfólio.</a>')
+        res.send('Mensagem enviada com sucesso. <a href="https://portfolio-rhuan.herokuapp.com/">Voltar para o portfólio.</a>')
     }).catch(error=>{
         console.log(error);
     });
